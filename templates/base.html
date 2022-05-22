@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+
+<head>
+    <title>Rock, Paper, and Scissors the Online Game!</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <ul>
+            <li>
+                <a href="/">Welcome Page</a>
+                <a href="/play">Play against the AI</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="maincontent">
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+
+
+
+
+</body>
+<hr>
+<footer>&copysr;A J Game - 2022</footer>
+
+</html>

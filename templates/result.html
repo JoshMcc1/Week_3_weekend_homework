@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block content%}
+<br>
+{% if winning_player == none%}
+<h1>No winner, its a draw!!</h1>
+{% else %}
+<h1>The Winner is {{winning_player.name}} with choice {{winning_player.choice}}</h1>
+{% endif %}
+<hr>
+<br>
+
+<p>Feel free to play again by going back to the welcome page</p>
+
+
+{% endblock %}

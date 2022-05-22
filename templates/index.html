@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Welome - {{title}}</h1>
+<hr>
+
+<p>
+    The rules are very simple, player 1 enters their name and choice, either Rock, paper or scissor.
+    Then, player 2 does the same and the winner is displayed.
+    You can also choose to paly against the computer following the link at the top of the page.
+</p>
+<ul>
+    <li>Rock beats Scissors</li>
+    <li>Paper beats Rock</li>
+    <li>Scissors beats Paper</li>
+</ul>
+
+<h3>Pretty easy right!</h3>
+
+<form method="post" action="/player1choice">
+    <label for="name">Player Name: </label>
+    <input type="text" name="name" id="name">
+    <br>
+
+    <label for="choice">Choice: </label>
+    <select id="choice" name="choice">
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Make Choice">
+</form>
+
+
+
+
+{% endblock%}

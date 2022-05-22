@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+{% block content%}
+
+<h3>Player 1 Name: {{player1.name}}</h3>
+<h3>{{player1.name}} has made their choice</h3>
+
+<form method="post" action="/result">
+    <label for="name">Player Name: </label>
+    <input type="text" name="name" id="name">
+    <br>
+
+    <label for="choice">Choice: </label>
+    <select id="choice" name="choice">
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Make Choice">
+</form>
+
+{% endblock %}
